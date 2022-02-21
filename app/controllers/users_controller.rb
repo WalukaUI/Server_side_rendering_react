@@ -3,11 +3,12 @@ class UsersController < ApplicationController
     # render component: "Home", props: { info: "click below button to show users"}
     # end
 
-    # def app
-    #  render component: "App"
-    # end
+    def about
+     render component: "About", props: { nfo: "click below button to show users"}
+    end
 
     
     def index
+        render component: "Home"
     end
 end
